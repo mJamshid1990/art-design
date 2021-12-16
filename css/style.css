@@ -319,3 +319,45 @@ footer span{
   letter-spacing: 2px;
 }
 /* End footer styling */
+
+.navbar-nav i{
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  .navbar-nav a{
+    display: none;
+  }
+  .navbar-nav i{
+    display: block;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity .5s ease;
+  }
+  .navbar-nav i:hover{
+    opacity: .7;
+  }
+  .banner-title{
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .design-content{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .blog-content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .about-content{
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 3rem;
+    align-items: center;
+  }
+}
