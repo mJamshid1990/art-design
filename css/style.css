@@ -14,6 +14,9 @@
   box-sizing: border-box;
   font-family: var(--Quicksand);
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   line-height: 1.4;
   color: var(--dark);
@@ -258,4 +261,61 @@ header{
 .blog-text a:hover{
   background-color: var(--exDark);
 }
-/* Eng of blog styling */
+/* End of blog styling */
+
+/* Start about styling */
+.about{
+  padding: 4.5rem 0;
+}
+.about-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  align-items: center;
+}
+.about-text{
+  margin: 2rem 0;
+}
+.about-text p{
+  font-size: 1.1rem;
+  padding: 0.6rem 0;
+  opacity: 0.8;
+}
+/* End about styling */
+
+/* Start footer styling */
+footer{
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+.social-links a{
+  border: 2px solid #fff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: all 0.5s ease;
+}
+.social-links a:hover{
+  background: #fff;
+  color: var(--dark);
+}
+footer span{
+  margin-top: 1rem;
+  display: block;
+  font-family: var(--Playfair);
+  letter-spacing: 2px;
+}
+/* End footer styling */
